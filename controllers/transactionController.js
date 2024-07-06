@@ -59,6 +59,7 @@ router.delete("/:id", (req, res) => {
 router.put("/:id", (req, res) => {
   const { id } = req.params;
   const transObj = transactions.findIndex((transaction) => transaction.id === id);
+  
   if (transObj !== -1) {
     transactions[transObj] = { ...transactions[transObj], ...req.body };
 
