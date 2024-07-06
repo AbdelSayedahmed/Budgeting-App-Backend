@@ -6,8 +6,10 @@ const fs = require("fs");
 
 router.get("/NotFound", (req, res) => res.send("Index not found!"));
 
+// Get all transactions
 router.get("/", (req, res) => res.status(200).json(transactions));
 
+// Get targeted transaction
 router.get("/:id", (req, res) => {
   const { id } = req.params;
   const transaction = transactions.find((transaction) => transaction.id === id);
@@ -19,6 +21,7 @@ router.get("/:id", (req, res) => {
   }
 });
 
+// Create a single transaction
 router.post("/", (req, res) => {
   const currentTrans = { id: nanoid.nanoid(), ...req.body };
   transactions.push(currentTrans);
@@ -37,6 +40,7 @@ router.post("/", (req, res) => {
   );
 });
 
+// Delete targeted transaction
 router.delete("/:id", (req, res) => {
   const { id } = req.params;
   const transOnj = transactions.findIndex((transaction) => transaction.id === id);
@@ -56,10 +60,11 @@ router.delete("/:id", (req, res) => {
   }
 });
 
+// Update targeted transaction
 router.put("/:id", (req, res) => {
   const { id } = req.params;
   const transObj = transactions.findIndex((transaction) => transaction.id === id);
-  
+
   if (transObj !== -1) {
     transactions[transObj] = { ...transactions[transObj], ...req.body };
 
