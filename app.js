@@ -8,9 +8,9 @@ app.use(cors());
 
 app.get("/", (req, res) => res.send("Welcome to the Budgeting App!"));
 
-const budgetController = require("./controllers/budgetController");
+const budgetController = require("./controllers/transactionController");
 
-app.use("/logs", budgetController);
+app.use("/transactions", budgetController);
 app.get("*", (req, res) => res.status(404).json({ error: "Page not found" }));
 
 module.exports = app;
