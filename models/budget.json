@@ -1,0 +1,26 @@
+[
+  {
+    "id": "V1StGXR8_Z5jdHi6B-myT",
+    "item_name": "Salary",
+    "amount": 3000.0,
+    "date": "2024-07-01",
+    "from": "Employer",
+    "category": "Income"
+  },
+  {
+    "id": "V1StGXR8_Z5jdHi6B-myU",
+    "item_name": "Grocery Shopping",
+    "amount": 150.75,
+    "date": "2024-07-02",
+    "from": "Grocery Store",
+    "category": "Food"
+  },
+  {
+    "id": "V1StGXR8_Z5jdHi6B-myV",
+    "item_name": "Cat Food",
+    "amount": 45.5,
+    "date": "2024-07-03",
+    "from": "Pet Store",
+    "category": "Pets"
+  }
+]
