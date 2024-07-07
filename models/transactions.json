@@ -2,7 +2,7 @@
   {
     "id": "V1StGXR8_Z5jdHi6B-myT",
     "name": "Salary",
-    "amount": 3000.0,
+    "amount": 3000,
     "date": "2024-07-01",
     "from": "Employer",
     "category": "Income"
