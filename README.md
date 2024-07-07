@@ -3,6 +3,7 @@
 This is the backend for a budgeting application. It is built using Express.js and includes basic CRUD operations for managing transactions.
 
 ## Table of Contents
+
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
@@ -11,17 +12,20 @@ This is the backend for a budgeting application. It is built using Express.js an
 ## Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/AbdelSayedahmed/budgeting-app-backend.git
    cd budgeting-app-backend
    ```
 
 2. Install the dependencies:
+
    ```bash
    npm install
    ```
 
 3. Create a `.env` file and set the port:
+
    ```
    PORT=6298
    ```
@@ -67,22 +71,34 @@ budgeting-app-backend/
 ## Detailed Explanation
 
 ### app.js
+
 Sets up the Express application, enabling CORS, JSON parsing, and defines the main routes.
 
 ### server.js
+
 Loads environment variables using `dotenv`, sets the application to listen on the port defined in the `.env` file.
 
 ### .env
+
 Contains environment-specific variables such as the port number.
 
 ### models/transactions.json
+
 Stores transaction data in JSON format.
 
 ### controllers/transactionController.js
+
 Handles CRUD operations for transactions, including GET, POST, PUT, and DELETE requests.
 
 ### .gitignore
+
 Specifies files and directories to be ignored by Git, such as `node_modules` and `.env`.
 
 ### package.json
+
 Defines the project dependencies and scripts.
+
+## Links
+
+[Live Site](https://budgetwise-demo.netlify.app/)
+[Frontend Repo](https://github.com/AbdelSayedahmed/budgeting-app-frontend)
